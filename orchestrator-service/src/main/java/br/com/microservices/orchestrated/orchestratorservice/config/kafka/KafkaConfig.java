@@ -98,4 +98,39 @@ public class KafkaConfig {
         return buildTopic(FINISH_FAIL.getTopic());
     }
 
+    @Bean
+    public NewTopic productValidationSuccessTopic() {
+        return buildTopic(PRODUCT_VALIDATION_SUCCESS.getTopic());
+    }
+
+    @Bean
+    public NewTopic productValidationFailTopic() {
+        return buildTopic(PRODUCT_VALIDATION_FAIL.getTopic());
+    }
+
+    @Bean
+    public NewTopic paymentSuccessTopic() {
+        return buildTopic(PAYMENT_SUCCESS.getTopic());
+    }
+
+    @Bean
+    public NewTopic paymentFailTopic() {
+        return buildTopic(PAYMENT_FAIL.getTopic());
+    }
+
+    @Bean
+    public NewTopic inventorySuccessTopic() {
+        return buildTopic(INVENTORY_SUCCESS.getTopic());
+    }
+
+    @Bean
+    public NewTopic inventoryFailTopic() {
+        return buildTopic(INVENTORY_FAIL.getTopic());
+    }
+
+    @Bean
+    public NewTopic notifyEndingTopic() {
+        return buildTopic(NOTIFY_ENDING.getTopic());
+    }
+
 }
