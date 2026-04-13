@@ -83,12 +83,12 @@ public class KafkaConfig {
 
     @Bean
     public NewTopic startSagaTopic() {
-        return buildTopic("start-saga-topic");
+        return buildTopic(startSagaTopic);
     }
 
     @Bean
     public NewTopic notifyEndingTopic() {
-        return buildTopic("notify-ending-topic");
+        return buildTopic(notifyEndingTopic);
     }
 
 
