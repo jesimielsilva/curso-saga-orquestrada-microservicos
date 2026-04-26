@@ -4,6 +4,12 @@ server:
 spring:
   kafka:
     bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    topics:
+      start-saga: start-saga
+      orchestrator: orchestrator
+      finish-success: finish-success
+      finish-fail: finish-fail
+      notify-ending: notify-ending
     consumer:
       group-id: orchestrator-service-group
       auto-offset-reset: latest

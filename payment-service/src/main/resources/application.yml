@@ -5,7 +5,7 @@ server:
 spring:
   kafka:
     bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
-    topic:
+    topics:
       orchestration: orchestration
       payment-success: payment-success
       payment-fail: payment-fail
