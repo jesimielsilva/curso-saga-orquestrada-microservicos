@@ -4,7 +4,7 @@ server:
 spring:
   kafka:
     bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
-    topic:
+    topics:
       orchestration: orchestration
       product-validation-success: product-validation-success
       product-validation-fail: product-validation-fail
